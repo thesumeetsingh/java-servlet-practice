@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Wed Jun 24 13:02:00 IST 2026
+org.eclipse.jst.jee.server\:FirstWebProject=C\:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\wtpwebapps\\FirstWebProject
+org.eclipse.jst.jee.server\:RequestDispatchingWebApp=C\:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\wtpwebapps\\RequestDispatchingWebApp
+org.eclipse.jst.jee.server\:SecondWebApp=C\:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\wtpwebapps\\SecondWebApp
+org.eclipse.jst.jee.server\:ThirdWebApp=C\:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\wtpwebapps\\ThirdWebApp

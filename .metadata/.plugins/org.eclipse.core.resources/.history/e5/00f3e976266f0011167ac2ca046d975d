@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WEP app with Dynamic response</title>
+</head>
+<body>
+
+
+<form action="/firstServlet" method=post>
+	<label for="username">enter user name</label>
+	<input type="text" name="username">
+	
+		<label for="city">enter user city</label>
+	<input type="text" name="city">
+	
+	<button type="submit">submit</button>
+</form>
+</body>
+</html>

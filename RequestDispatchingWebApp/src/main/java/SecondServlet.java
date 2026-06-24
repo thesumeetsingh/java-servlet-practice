@@ -1,0 +1,41 @@
+
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+/**
+ * Servlet implementation class SecondServlet
+ */
+@WebServlet("/Servlet2")
+public class SecondServlet extends HttpServlet {
+	static {
+		System.out.println("First Servlet Loaded");
+	}
+	public SecondServlet(){
+		System.out.println("OBJECT of first servlet created");
+	}
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+
+
+	/**
+	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		System.out.println("control in second servlet");
+		
+		PrintWriter pw= response.getWriter();
+		pw.println("<h1>response from SECOND servlet</h1>");
+		pw.close();
+	}
+
+}
