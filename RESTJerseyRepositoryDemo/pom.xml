@@ -43,6 +43,8 @@
 			<artifactId>jersey-media-jaxb</artifactId>
 			<version>2.39.1</version>
 		</dependency>
+		
+		
 
 		<!-- JAXB API -->
 		<dependency>
@@ -57,11 +59,15 @@
 			<artifactId>jaxb-runtime</artifactId>
 			<version>2.3.9</version>
 		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
-			<artifactId>jaxb-runtime</artifactId>
-			<version>2.3.9</version>
-		</dependency>
+		
+<!-- Source: https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-moxy -->
+<dependency>
+    <groupId>org.glassfish.jersey.media</groupId>
+    <artifactId>jersey-media-moxy</artifactId>
+     <version>2.39.1</version>
+   
+</dependency>
+
 	</dependencies>
 
 	<build>

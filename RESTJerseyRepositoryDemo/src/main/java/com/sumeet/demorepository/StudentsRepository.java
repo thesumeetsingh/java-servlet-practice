@@ -33,7 +33,7 @@ public class StudentsRepository {
 	 public Student getStudent(String id) {
 		 
 		 for(Student s: students) {
-			 if(s.getUsername()==id) {
+			 if(s.getUsername().equals(id)) {
 				 return s;
 			 }
 		 }
@@ -45,4 +45,17 @@ public class StudentsRepository {
 		// TODO Auto-generated method stub
 		students.add(s1);
 	 }
+	 
+	 public void printStudents() {
+		 for(Student s: students) {
+			 System.out.println(s.getName());
+		 }
+	 }
+
+	 @Override
+	 public String toString() {
+		return "StudentsRepository [students=" + students + "]";
+	 }
+	 
+	 
 }

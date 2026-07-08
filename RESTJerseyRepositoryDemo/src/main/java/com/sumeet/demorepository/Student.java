@@ -29,6 +29,10 @@ public class Student {
 	public void setUsername(String username) {
 		this.username = username;
 	}
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", username=" + username + ", usercity=" + usercity + "]";
+	}
 	
 	
  
