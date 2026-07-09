@@ -117,9 +117,83 @@ public class Model {
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+			} finally {
+				try {
+					JDBCUtil.closeResource(connect, pstmt);
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 
 			// TODO Auto-generated method stub
+			return null;
+		}
+
+		public Student update(String username, Student student) {
+			String sqlQuery="UPDATE USERS set FIRSTNAME=?, LASTNAME=? WHERE USERNAME=?";
+			try {
+				connect= JDBCUtil.getConnection();
+				pstmt= connect.prepareStatement(sqlQuery);
+				pstmt.setString(1, student.getFirstname());
+				pstmt.setString(2,  student.getLastname());
+				pstmt.setString(3,  username);
+				int row= pstmt.executeUpdate();
+				
+				if(row>0) {
+					System.out.println("update successfull...");
+					JDBCUtil.closeResource(connect, pstmt);
+					return student;
+				}else {
+					System.out.println("unable to update...");
+					
+				}
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}finally {
+				try {
+					JDBCUtil.closeResource(connect, pstmt);
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			
 			return new Student();
+			
+			
+		}
+
+		public Student deleteStudent(String username) {
+			Student del= this.getStudent(username);
+			String query = "DELETE FROM USERS WHERE USERNAME='" + username + "'";
+			try {
+				connect= JDBCUtil.getConnection();
+				statement= connect.createStatement();
+				int row=statement.executeUpdate(query);
+				if(row>0) {
+					System.out.println("deleted...");
+					JDBCUtil.closeResource(connect, statement);
+					return del;
+					
+				}else {
+					System.out.println("unable to delete...");
+				}
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}finally {
+				try {
+					JDBCUtil.closeResource(connect, statement);
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+			
+			return null;
+			
 		}
 }
