@@ -5,9 +5,10 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -48,6 +49,30 @@ public class StudentResource {
 			return student;
 		}
 		
+		
+		@PUT
+		@Path("update/{username}")
+		public Student update(@PathParam("username") String username, Student student) {
+			Student current= model.getStudent(username);
+			if(current!=null) {
+				System.out.println("student found "+current.toString());
+				System.out.println("updating values...");
+				model.update(username, student);
+			}else {
+				model.register(student);
+			}
+			
+			
+			return student;
+		}
+		
+		@DELETE
+		@Path("delete/{username}")
+		public Student delete(@PathParam("username") String username) {
+			Student deleted= model.deleteStudent(username);
+			
+			return deleted;
+		}
 		
 		
 }
