@@ -27,6 +27,9 @@ public class FirstServlet extends HttpServlet {
 		String lastname=request.getParameter("lastname");
 		String username=request.getParameter("username");
 		String city=request.getParameter("city");
+		String email=request.getParameter("email");
+		String phone=request.getParameter("phone");
+		String password=request.getParameter("password");
 		
 		
 		HttpSession session=request.getSession();
@@ -35,6 +38,9 @@ public class FirstServlet extends HttpServlet {
 		session.setAttribute("lastname", lastname);
 		session.setAttribute("username", username);
 		session.setAttribute("city", city);
+		session.setAttribute("email", email);
+		session.setAttribute("phone", phone);
+		session.setAttribute("password", password);
 		System.out.println("recieved all values (firstname, lastname, username, city) added to session");
 		RequestDispatcher reqDis = request.getRequestDispatcher("/secondServlet");
 		reqDis.forward(request, response);

@@ -1,6 +1,6 @@
 #Tomcat publish data
-#Wed Jun 24 13:02:00 IST 2026
-org.eclipse.jst.jee.server\:FirstWebProject=C\:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\wtpwebapps\\FirstWebProject
-org.eclipse.jst.jee.server\:RequestDispatchingWebApp=C\:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\wtpwebapps\\RequestDispatchingWebApp
-org.eclipse.jst.jee.server\:SecondWebApp=C\:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\wtpwebapps\\SecondWebApp
-org.eclipse.jst.jee.server\:ThirdWebApp=C\:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\wtpwebapps\\ThirdWebApp
+#Thu Jul 09 12:34:26 IST 2026
+org.eclipse.jst.j2ee.server\:JerseyDemoListResource=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\JerseyDemoListResource
+org.eclipse.jst.jee.server\:JerseyDemo=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\JerseyDemo
+org.eclipse.jst.jee.server\:RESTJerseyRepositoryDemo=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\RESTJerseyRepositoryDemo
+org.eclipse.jst.jee.server\:WebAppRESTnJDBC=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\WebAppRESTnJDBC
