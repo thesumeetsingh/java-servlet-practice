@@ -1,6 +1,0 @@
-#Tomcat publish data
-#Thu Jul 09 12:34:26 IST 2026
-org.eclipse.jst.j2ee.server\:JerseyDemoListResource=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\JerseyDemoListResource
-org.eclipse.jst.jee.server\:JerseyDemo=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\JerseyDemo
-org.eclipse.jst.jee.server\:RESTJerseyRepositoryDemo=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\RESTJerseyRepositoryDemo
-org.eclipse.jst.jee.server\:WebAppRESTnJDBC=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\WebAppRESTnJDBC
